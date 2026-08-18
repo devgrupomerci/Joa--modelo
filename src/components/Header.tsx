@@ -34,7 +34,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex-1 lg:flex-none text-center lg:text-left flex justify-center lg:justify-start">
             <a href="/" className="inline-block">
-              <img src="/images/LogoNovo2.webp" alt="JOÁ" className="h-12 w-auto" />
+              <img src="/LogoNovo2.webp" alt="JOÁ" className="h-12 w-auto" />
             </a>
           </div>
 
