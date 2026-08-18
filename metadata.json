@@ -1,0 +1,8 @@
+{
+  "name": "JOÁ",
+  "description": "E-commerce de luxo e curadoria de eyewear internacional",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
