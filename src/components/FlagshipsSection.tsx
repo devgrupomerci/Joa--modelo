@@ -83,6 +83,12 @@ const STORES = [
   }
 ];
 
+type Store = (typeof STORES)[number];
+
+const getFullAddress = (store: Store) => `${store.address}, ${store.details}, ${store.cep}`;
+const getMapsEmbedUrl = (store: Store) => `https://www.google.com/maps?q=${encodeURIComponent(getFullAddress(store))}&output=embed`;
+const getMapsSearchUrl = (store: Store) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(getFullAddress(store))}`;
+
 export function FlagshipsSection() {
   return (
     <section className="py-24 bg-cream-50" id="lojas">
@@ -94,10 +100,10 @@ export function FlagshipsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {STORES.map((store, idx) => (
-            <div key={idx} className="bg-white border border-neutral-200 p-8 flex flex-col transition-shadow hover:shadow-md">
-              <h3 className="text-sm font-bold uppercase tracking-widest text-neutral-900 mb-6 pb-4 border-b border-neutral-100">{store.name}</h3>
-              
-              <div className="flex-1 space-y-4 text-sm text-neutral-600">
+            <div key={idx} className="bg-white border border-neutral-200 p-6 flex flex-col transition-shadow hover:shadow-md">
+              <h3 className="text-sm font-bold uppercase tracking-widest text-neutral-900 mb-5 pb-4 border-b border-neutral-100">{store.name}</h3>
+
+              <div className="text-sm text-neutral-600">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" />
                   <div>
@@ -106,36 +112,61 @@ export function FlagshipsSection() {
                     <p className="text-neutral-400">{store.cep}</p>
                   </div>
                 </div>
+              </div>
 
-                <div className="flex items-center gap-3">
-                  <Phone className="w-4 h-4 text-neutral-400 flex-shrink-0" />
-                  <p>{store.phone}</p>
-                </div>
+              <details className="group mt-6 border-t border-neutral-100 pt-5">
+                <summary className="cursor-pointer list-none text-xs font-bold uppercase tracking-widest text-neutral-500 transition-colors hover:text-neutral-900">
+                  Mais informações
+                </summary>
 
-                <div className="flex items-start gap-3">
-                  <Clock className="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" />
-                  <p className="leading-relaxed">{store.hours}</p>
-                </div>
+                <div className="mt-5 space-y-4 text-sm text-neutral-600">
+                  <div className="overflow-hidden border border-neutral-200 bg-neutral-100 aspect-[4/3]">
+                    <iframe
+                      src={getMapsEmbedUrl(store)}
+                      title={`Mapa ${store.name}`}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="h-full w-full border-0"
+                    />
+                  </div>
 
-                <div className="flex items-center gap-3">
-                  <Mail className="w-4 h-4 text-neutral-400 flex-shrink-0" />
-                  <a href={`mailto:${store.email}`} className="hover:text-neutral-900 transition-colors break-all">
-                    {store.email}
+                  <a
+                    href={getMapsSearchUrl(store)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex text-xs font-bold uppercase tracking-widest text-neutral-900 border-b border-neutral-900 pb-1 hover:text-neutral-500 hover:border-neutral-500 transition-colors"
+                  >
+                    Ver no mapa
+                  </a>
+
+                  <div className="flex items-center gap-3">
+                    <Phone className="w-4 h-4 text-neutral-400 flex-shrink-0" />
+                    <p>{store.phone}</p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Clock className="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" />
+                    <p className="leading-relaxed">{store.hours}</p>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <Mail className="w-4 h-4 text-neutral-400 flex-shrink-0" />
+                    <a href={`mailto:${store.email}`} className="hover:text-neutral-900 transition-colors break-all">
+                      {store.email}
+                    </a>
+                  </div>
+
+                  <a
+                    href={store.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 w-full bg-green-50 text-green-700 border border-green-200 px-4 py-3 text-xs font-bold uppercase tracking-widest hover:bg-green-100 transition-colors"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    Falar no WhatsApp
                   </a>
                 </div>
-              </div>
-
-              <div className="mt-8 pt-6 border-t border-neutral-100">
-                <a 
-                  href={store.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full bg-green-50 text-green-700 border border-green-200 px-4 py-3 text-xs font-bold uppercase tracking-widest hover:bg-green-100 transition-colors"
-                >
-                  <MessageCircle className="w-4 h-4" />
-                  Falar no WhatsApp
-                </a>
-              </div>
+              </details>
             </div>
           ))}
         </div>
