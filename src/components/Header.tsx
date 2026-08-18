@@ -45,10 +45,10 @@ export function Header() {
             <a href="#" className="hover:opacity-70 transition-opacity whitespace-nowrap">Marcas</a>
             <a href="#" className="hover:opacity-70 transition-opacity whitespace-nowrap">Brand Store</a>
             <a href="#" className="hover:opacity-70 transition-opacity whitespace-nowrap">JOÁ Collections</a>
-            <a href="#" className="hover:opacity-70 transition-opacity whitespace-nowrap text-neutral-500">Lentes</a>
-            <a href="#" className="hover:opacity-70 transition-opacity whitespace-nowrap text-neutral-500">Flagships</a>
-            <a href="#" className="hover:opacity-70 transition-opacity whitespace-nowrap text-neutral-500">Sports & Kids</a>
-            <a href="#" className="hover:opacity-70 transition-opacity whitespace-nowrap text-neutral-500">Bazar</a>
+            <a href="#" className={clsx("hover:opacity-70 transition-opacity whitespace-nowrap", isScrolled ? "text-neutral-500" : "text-white")}>Lentes</a>
+            <a href="#" className={clsx("hover:opacity-70 transition-opacity whitespace-nowrap", isScrolled ? "text-neutral-500" : "text-white")}>Flagships</a>
+            <a href="#" className={clsx("hover:opacity-70 transition-opacity whitespace-nowrap", isScrolled ? "text-neutral-500" : "text-white")}>Sports & Kids</a>
+            <a href="#" className={clsx("hover:opacity-70 transition-opacity whitespace-nowrap", isScrolled ? "text-neutral-500" : "text-white")}>Bazar</a>
           </nav>
 
           {/* Actions */}

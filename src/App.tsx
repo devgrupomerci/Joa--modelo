@@ -8,6 +8,7 @@ import { ShopByStyle } from './components/ShopByStyle';
 import { ShopByShape } from './components/ShopByShape';
 import { MaisonHighlight } from './components/MaisonHighlight';
 import { BrandStores } from './components/BrandStores';
+import { SunglassesSection } from './components/SunglassesSection';
 import { FeaturedProducts } from './components/FeaturedProducts';
 import { JoaCollections } from './components/JoaCollections';
 import { LensesSection } from './components/LensesSection';
@@ -33,6 +34,7 @@ export default function App() {
         <ShopByShape />
         <MaisonHighlight />
         <BrandStores />
+        <SunglassesSection />
         <JoaCollections />
         <LensesSection />
         <FlagshipsSection />
