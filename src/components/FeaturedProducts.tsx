@@ -9,7 +9,7 @@ const PRODUCTS = [
     color: "Grafite",
     price: "R$ 450",
     installments: "ou 10x de R$ 45",
-    image: "/assets/180_oculos_de_grau_oval_mkenzy_kmn80_grafite_10167103_2_e51944cfc3f09c61d899620fdc685f87.webp",
+    image: "/images/180_oculos_de_grau_oval_mkenzy_kmn80_grafite_10167103_2_e51944cfc3f09c61d899620fdc685f87.webp",
     colors: ['#4b4b4b'],
     tag: "Lançamento",
     tagColor: "bg-neutral-900 text-white"
@@ -21,7 +21,7 @@ const PRODUCTS = [
     color: "Tartaruga",
     price: "R$ 890",
     installments: "ou 10x de R$ 89",
-    image: "/assets/180_oculos_de_grau_retangular_lacoste_2986_tartaruga_10169423_2_d955bd6c25536fdbde9db6750a7bbd9c.webp",
+    image: "/images/180_oculos_de_grau_retangular_lacoste_2986_tartaruga_10169423_2_d955bd6c25536fdbde9db6750a7bbd9c.webp",
     colors: ['#8b4513'],
     tag: "Oferta",
     tagColor: "bg-red-700 text-white"
@@ -33,7 +33,7 @@ const PRODUCTS = [
     color: "Preto",
     price: "R$ 1.950",
     installments: "ou 10x de R$ 195",
-    image: "/assets/180_oculos_de_sol_gatinho_tiffany_4251_preto_10163991_2_7b094a4383f24b2611aeb5f09dd8fc23.webp",
+    image: "/images/180_oculos_de_sol_gatinho_tiffany_4251_preto_10163991_2_7b094a4383f24b2611aeb5f09dd8fc23.webp",
     colors: ['#000000'],
     tag: "Exclusivo",
     tagColor: "bg-neutral-200 text-neutral-900"
@@ -45,7 +45,7 @@ const PRODUCTS = [
     color: "Marrom",
     price: "R$ 550",
     installments: "ou 10x de R$ 55",
-    image: "/assets/180_oculos_de_sol_quadrado_mkenzy_dj9099s_marrom_10167083_2_9a7c49ef4b4bb020de6cf032e313785e.webp",
+    image: "/images/180_oculos_de_sol_quadrado_mkenzy_dj9099s_marrom_10167083_2_9a7c49ef4b4bb020de6cf032e313785e.webp",
     colors: ['#8b4513'],
     tag: "Mais Vendido",
     tagColor: "bg-neutral-900 text-white"

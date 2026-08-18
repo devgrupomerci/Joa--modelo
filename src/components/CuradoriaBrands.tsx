@@ -1,19 +1,19 @@
 const BRANDS = [
   {
     title: "JOÁ × Oakley",
-    image: "/assets/ChatGPT Image 18_08_2026, 03_48_15 (1).png",
+    image: "/images/ChatGPT_Image_18_08_2026_03_48_15_1.png",
   },
   {
     title: "JOÁ × Ray-Ban",
-    image: "/assets/ChatGPT Image 18_08_2026, 03_48_15 (2).png",
+    image: "/images/ChatGPT_Image_18_08_2026_03_48_15_2.png",
   },
   {
     title: "JOÁ × Anne et Valentin",
-    image: "/assets/ChatGPT Image 18_08_2026, 03_48_15 (3).png",
+    image: "/images/ChatGPT_Image_18_08_2026_03_48_15_3.png",
   },
   {
     title: "JOÁ × Designers",
-    image: "/assets/ChatGPT Image 18_08_2026, 03_48_16 (4).png",
+    image: "/images/ChatGPT_Image_18_08_2026_03_48_16_4.png",
   }
 ];
 

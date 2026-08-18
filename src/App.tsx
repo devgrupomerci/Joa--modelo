@@ -28,10 +28,10 @@ export default function App() {
         <NewArrivals />
         <CuradoriaBrands />
         <ShopByStyle />
+        <FeaturedProducts />
         <ShopByShape />
         <MaisonHighlight />
         <BrandStores />
-        <FeaturedProducts />
         <JoaCollections />
         <LensesSection />
         <FlagshipsSection />

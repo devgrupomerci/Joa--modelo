@@ -1,10 +1,10 @@
 const STYLES = [
-  { name: "Minimalista", image: "/assets/ChatGPT Image 18_08_2026, 04_00_21 (1).png" },
-  { name: "Clássico", image: "/assets/ChatGPT Image 18_08_2026, 04_00_21 (2).png" },
-  { name: "Statement", image: "/assets/ChatGPT Image 18_08_2026, 04_00_22 (3).png" },
-  { name: "Retrô", image: "/assets/ChatGPT Image 18_08_2026, 04_00_22 (4).png" },
-  { name: "Esportivo", image: "/assets/ChatGPT Image 18_08_2026, 04_00_22 (5).png" },
-  { name: "Avant-garde", image: "/assets/ChatGPT Image 18_08_2026, 04_00_22 (6).png" },
+  { name: "Minimalista", image: "/images/ChatGPT_Image_18_08_2026_04_00_21_1.png" },
+  { name: "Clássico", image: "/images/ChatGPT_Image_18_08_2026_04_00_21_2.png" },
+  { name: "Statement", image: "/images/ChatGPT_Image_18_08_2026_04_00_22_3.png" },
+  { name: "Retrô", image: "/images/ChatGPT_Image_18_08_2026_04_00_22_4.png" },
+  { name: "Esportivo", image: "/images/ChatGPT_Image_18_08_2026_04_00_22_5.png" },
+  { name: "Avant-garde", image: "/images/ChatGPT_Image_18_08_2026_04_00_22_6.png" },
 ];
 
 export function ShopByStyle() {

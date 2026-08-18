@@ -10,7 +10,7 @@ export function Footer() {
           
           {/* Column 1: JOÁ */}
           <div className="lg:col-span-1">
-            <img src="/assets/LogoNovo2.webp" alt="JOÁ" className="h-8 mb-6 object-contain" />
+            <img src="/images/LogoNovo2.webp" alt="JOÁ" className="h-8 mb-6 object-contain" />
             <ul className="space-y-4 text-sm text-neutral-500">
               <li><a href="#" className="hover:text-neutral-900 transition-colors">Sobre a JOÁ</a></li>
               <li><a href="#" className="hover:text-neutral-900 transition-colors">Nossa história</a></li>

@@ -4,7 +4,7 @@ export function JoaCollections() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/assets/ChatGPT Image 18_08_2026, 04_19_23.png" 
+          src="/images/ChatGPT_Image_18_08_2026_04_19_23.png" 
           alt="JOÁ Selection Background" 
           className="w-full h-full object-cover object-center"
         />
