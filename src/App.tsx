@@ -24,6 +24,7 @@ export default function App() {
       
       <main>
         <Hero />
+        <BenefitsSection />
         <Discover />
         <NewArrivals />
         <CuradoriaBrands />
@@ -36,7 +37,6 @@ export default function App() {
         <LensesSection />
         <FlagshipsSection />
         <ConciergeSection />
-        <BenefitsSection />
       </main>
 
       <Footer />
