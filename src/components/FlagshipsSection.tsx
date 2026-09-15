@@ -91,9 +91,9 @@ const getMapsSearchUrl = (store: Store) => `https://www.google.com/maps/search/?
 
 export function FlagshipsSection() {
   return (
-    <section className="py-24 bg-cream-50" id="lojas">
+    <section className="pt-8 pb-16 bg-cream-50" id="lojas">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-sm font-bold uppercase tracking-[0.2em] mb-4 text-neutral-500">Nossas Lojas</h2>
           <p className="text-3xl md:text-4xl font-serif text-neutral-900">Encontre a JOÁ mais próxima de você</p>
         </div>

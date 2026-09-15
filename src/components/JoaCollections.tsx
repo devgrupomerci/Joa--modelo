@@ -1,6 +1,6 @@
 export function JoaCollections() {
   return (
-    <section className="relative py-32 md:py-48 flex items-center justify-center overflow-hidden">
+    <section className="relative flex items-center justify-center overflow-hidden aspect-[440/523] md:aspect-[1920/665]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 

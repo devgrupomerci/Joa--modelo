@@ -1,6 +1,6 @@
 export function MaisonHighlight() {
   return (
-    <section className="relative h-[80vh] min-h-[560px] w-full flex items-end overflow-hidden">
+    <section className="relative w-full flex items-end overflow-hidden aspect-[440/659] md:aspect-[1920/730]">
       <div className="absolute inset-0 z-0">
         <img 
           src="/d85d9b36-9242-484a-b7da-b886227223a1.png" 

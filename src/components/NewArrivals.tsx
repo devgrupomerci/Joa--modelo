@@ -53,15 +53,15 @@ const PRODUCTS = [
 
 export function NewArrivals() {
   return (
-    <section className="py-24 bg-white relative">
+    <section className="py-16 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div className="flex flex-col items-center justify-center text-center mb-8 gap-6">
           <div>
             <h2 className="text-3xl md:text-4xl font-serif text-neutral-900 mb-4">Novidades da semana</h2>
             <p className="text-neutral-500 font-light text-lg">Produtos recém-chegados à curadoria JOÁ.</p>
           </div>
           
-          <div className="flex items-center gap-6">
+          <div className="flex items-center justify-center gap-6">
             <a href="#" className="text-xs font-bold uppercase tracking-widest border-b border-neutral-900 pb-1 hover:text-[var(--color-joa-green)] hover:border-[var(--color-joa-green)] transition-colors inline-block">
               Ver todas as novidades
             </a>

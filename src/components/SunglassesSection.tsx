@@ -29,15 +29,15 @@ const SUNGLASSES = [
 
 export function SunglassesSection() {
   return (
-    <section id="oculos-de-sol" className="py-24 bg-neutral-950 relative">
+    <section id="oculos-de-sol" className="py-16 bg-neutral-950 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div className="flex flex-col items-center justify-center text-center mb-8 gap-6">
           <div>
             <h2 className="text-3xl md:text-4xl font-serif text-white mb-4">Óculos de Sol</h2>
             <p className="text-neutral-400 font-light text-lg">Modelos solares escolhidos pela curadoria JOÁ.</p>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center justify-center gap-6">
             <a href="#" className="text-xs font-bold uppercase tracking-widest border-b border-white pb-1 text-white hover:text-[var(--color-joa-green)] hover:border-[var(--color-joa-green)] transition-colors inline-block">
               Ver todos os solares
             </a>

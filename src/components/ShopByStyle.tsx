@@ -9,14 +9,14 @@ const STYLES = [
 
 export function ShopByStyle() {
   return (
-    <section className="py-24 bg-white">
+    <section className="pt-8 pb-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-serif text-neutral-900 mb-16">Qual é o seu estilo?</h2>
+        <h2 className="text-3xl md:text-4xl font-serif text-neutral-900 mb-8">Qual é o seu estilo?</h2>
         
         <div className="flex overflow-x-auto hide-scrollbar gap-4 md:grid md:grid-cols-3 lg:grid-cols-6 pb-8 -mx-4 px-4 md:mx-0 md:px-0">
           {STYLES.map((style, idx) => (
             <a key={idx} href="#" className="min-w-[160px] md:min-w-0 group block text-center">
-              <div className="relative aspect-[3/4] mb-6 overflow-hidden bg-cream-50 rounded-full">
+              <div className="relative aspect-[160/213] md:aspect-[190/252] mb-6 overflow-hidden bg-cream-50 rounded-full">
                 <img 
                   src={style.image} 
                   alt={style.name} 
