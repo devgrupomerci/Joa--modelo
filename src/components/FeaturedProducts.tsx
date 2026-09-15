@@ -75,20 +75,20 @@ export function FeaturedProducts() {
           </div>
           
           <div className="flex items-center gap-6">
-            <a href="#" className="text-xs font-bold uppercase tracking-widest border-b border-neutral-900 pb-1 hover:text-neutral-500 hover:border-neutral-500 transition-colors inline-block">
+            <a href="#" className="text-xs font-bold uppercase tracking-widest border-b border-neutral-900 pb-1 hover:text-[var(--color-joa-green)] hover:border-[var(--color-joa-green)] transition-colors inline-block">
               Ver todos os destaques
             </a>
             <div className="hidden md:flex items-center gap-2">
               <button 
                 onClick={() => scroll('left')}
-                className="p-3 border border-neutral-200 rounded-full hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition-colors"
+                className="p-3 border border-neutral-200 rounded-full hover:border-[var(--color-joa-green)] hover:bg-[var(--color-joa-green)] hover:text-neutral-900 transition-colors"
                 aria-label="Anterior"
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
               <button 
                 onClick={() => scroll('right')}
-                className="p-3 border border-neutral-200 rounded-full hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition-colors"
+                className="p-3 border border-neutral-200 rounded-full hover:border-[var(--color-joa-green)] hover:bg-[var(--color-joa-green)] hover:text-neutral-900 transition-colors"
                 aria-label="Próximo"
               >
                 <ChevronRight className="w-5 h-5" />
@@ -121,15 +121,17 @@ export function FeaturedProducts() {
                   <button className="absolute top-2 right-2 p-2 bg-white/80 backdrop-blur rounded-full opacity-0 group-hover/card:opacity-100 transition-opacity hover:text-red-500 shadow-sm">
                     <Heart className="w-4 h-4" />
                   </button>
+
                   <div className="absolute bottom-2 left-2 right-2 opacity-0 group-hover/card:opacity-100 transition-opacity">
-                    <button className="w-full bg-white/90 backdrop-blur border border-neutral-200 text-neutral-900 text-xs font-bold uppercase tracking-widest py-3 hover:bg-white transition-colors">
+                    <button className="w-full bg-white/90 backdrop-blur border border-neutral-200 text-neutral-900 text-xs font-bold uppercase tracking-widest py-3 hover:bg-[var(--color-joa-green)] hover:text-neutral-900 transition-colors">
                       Quick View
                     </button>
                   </div>
                 </div>
+
                 <div className="text-center px-2">
-                  <h3 className="font-bold text-sm uppercase tracking-widest mb-1">{product.brand}</h3>
-                  <p className="text-neutral-500 text-sm mb-1">{product.model}</p>
+                  <h3 className="font-serif font-bold text-[15px] uppercase tracking-widest mb-1">{product.brand}</h3>
+                  <p className="text-neutral-500 text-sm mb-1 font-sans">{product.model}</p>
                   <p className="text-neutral-400 text-xs mb-3">{product.color}</p>
                   
                   <div className="flex items-center justify-center gap-1.5 mb-4">

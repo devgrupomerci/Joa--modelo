@@ -38,7 +38,7 @@ export function SunglassesSection() {
           </div>
 
           <div className="flex items-center gap-6">
-            <a href="#" className="text-xs font-bold uppercase tracking-widest border-b border-white pb-1 text-white hover:text-neutral-300 hover:border-neutral-300 transition-colors inline-block">
+            <a href="#" className="text-xs font-bold uppercase tracking-widest border-b border-white pb-1 text-white hover:text-[var(--color-joa-green)] hover:border-[var(--color-joa-green)] transition-colors inline-block">
               Ver todos os solares
             </a>
           </div>
@@ -65,15 +65,15 @@ export function SunglassesSection() {
                     <Heart className="w-4 h-4" />
                   </button>
                   <div className="absolute bottom-2 left-2 right-2 opacity-0 group-hover/card:opacity-100 transition-opacity">
-                    <button className="w-full bg-white/90 backdrop-blur border border-neutral-200 text-neutral-900 text-xs font-bold uppercase tracking-widest py-3 hover:bg-white transition-colors">
+                    <button className="w-full bg-white/90 backdrop-blur border border-neutral-200 text-neutral-900 text-xs font-bold uppercase tracking-widest py-3 hover:bg-[var(--color-joa-green)] hover:text-neutral-900 transition-colors">
                       Quick View
                     </button>
                   </div>
                 </div>
 
                 <div className="text-center px-2">
-                  <h3 className="font-bold text-sm uppercase tracking-widest mb-1 text-neutral-900">{product.brand}</h3>
-                  <p className="text-neutral-500 text-sm mb-1">{product.model}</p>
+                  <h3 className="font-serif font-bold text-[15px] uppercase tracking-widest mb-1 text-neutral-900">{product.brand}</h3>
+                  <p className="text-neutral-500 text-sm mb-1 font-sans">{product.model}</p>
                   <p className="text-neutral-400 text-xs mb-3">{product.color}</p>
 
                   <div className="flex items-center justify-center gap-1.5 mb-4">

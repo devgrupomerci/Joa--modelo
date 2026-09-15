@@ -13,9 +13,6 @@ export function MaisonHighlight() {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-20 text-white">
         <div className="max-w-2xl">
           <h2 className="text-sm font-bold uppercase tracking-[0.3em] mb-6">Prada Eyewear</h2>
-          <p className="text-4xl md:text-5xl lg:text-6xl font-serif mb-10 leading-tight">
-            Uma nova visão sobre design contemporâneo.
-          </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="#" className="w-full sm:w-auto bg-white text-neutral-900 px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-neutral-100 transition-colors">
               Conhecer a coleção

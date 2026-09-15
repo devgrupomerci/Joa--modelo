@@ -26,8 +26,8 @@ export default function App() {
       <main>
         <Hero />
         <BenefitsSection />
-        <Discover />
         <NewArrivals />
+        <Discover />
         <CuradoriaBrands />
         <ShopByStyle />
         <FeaturedProducts />
